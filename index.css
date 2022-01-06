@@ -38,3 +38,8 @@ img{
     margin-bottom: 25px;
 }
   
+body{
+    background-image: url("Wallpaper1.jpg");
+    background-size: cover;
+    
+  }
