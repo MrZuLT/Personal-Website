@@ -44,7 +44,7 @@ header{
 footer{
   width: 100%;  
   text-align: center;
-  background-color:#1b1d27;
+  /*background-color:#1b1d27;*/
   color: white;
   font-size: 15px;
   position: fixed;
@@ -53,7 +53,5 @@ footer{
 }
 
 body{
-  background-image: url("Wallpaper3.jpg");
-  background-size: cover;
-  
+  background: #323647;
 }
