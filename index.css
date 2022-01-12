@@ -193,7 +193,7 @@ section .title::after{
     background: orange;
 }
 .portfolio .gallery .figure:hover .box{
-    transform: scale(1.10);
+    transform: scale(1.15);
 }
 .portfolio .gallery .figure .box{
     display: flex;
@@ -202,15 +202,35 @@ section .title::after{
     justify-content: center;
 }
 .portfolio .gallery .figure img{
-    height: 250px;
+    height: 200px;
     width: 260px;
     object-fit: cover;
     border-radius: 10%;
     border: 5px solid white;
 }
-.portfolio .gallery .figure:hover img{
-    background-color: black;
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
 }
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    /*background-color: orange;*/
+    border: 2px solid white!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot .active,
+.owl-dot:hover{
+    background: orange!important;
+}
+
 
 /*for mobile phone*/
 @media (max-width: 1300px){
