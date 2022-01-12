@@ -101,99 +101,11 @@
     font-weight: 500;
 }
 
-/*for mobile phone*/
-@media (max-width: 1300px){
-    .home .max-width{
-        margin-left: 0px;
-    }
-}
-@media (max-width: 1104px){
-    .about .about-content .left img{
-        height: 350px;
-        width: 350px;
-        
-    }
-}
-@media (max-width: 991px){
-    .max-width{
-        padding: 0 50px;
-    }
-}
-@media (max-width: 947px){
-    .links-btn{
-        display: block;
-        z-index: 999;
-    }
-    .links-btn i.active:before{
-        content: "\f00d";
-    }
-    .navbar .links{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: black;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-    .navbar .links.active{
-        left: 0;
-    }
-    .navbar .links li{
-        display: block;
-    }
-    .navbar .links li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-    
-    .home .home-content .text-2{
-        font-size: 70px;
-    }
-    .home .home-content .text-3{
-        font-size: 35px;
-    }
-    .max-width{
-        max-width: 800px;
-    }
-    .about .about-content .column{
-        width: 100%;
-    }
-    .about .about-content .left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-    }
-    .about .about-content .right{
-        flex: 100%;
-    }
-    
-}
-
-@media (max-width: 500px){
-    .max-width{
-        padding: 0 23px;
-    }
-    .home .home-content .text-2{
-        font-size: 50px;
-    }
-    .home .home-content .text-3{
-        font-size: 27px;
-    }
-}    
-
-/*About section style*/
+/*All section title*/
 section{
     padding: 100px 0;
 }
-.about{
-    font-family: 'Poppins' , sans-serif;
-    background: #4b516a;
-}
-.about .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -203,7 +115,7 @@ section{
     color: white;
     font-family: 'Ubuntu' , sans-serif;
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -213,16 +125,24 @@ section{
     background: white;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "who I am";
+section .title::after{
     position: absolute;
     bottom: -14px;
     left: 50%;
     font-size: 20px;
     color: orange;
     padding: 5px;
-    background: #4b516a;
     transform: translateX(-50%);
+}
+
+/*About section style*/
+.about{
+    font-family: 'Poppins' , sans-serif;
+    background: #4b516a;
+}
+.about .title::after{
+    content: "Introduction";
+    background: #4b516a;
 }
 .about .about-content{
     display: flex;
@@ -255,3 +175,120 @@ section{
     text-align: justify;
     color: white;
 }
+
+/*Portfolio section style*/
+.portfolio{
+    background: #323647;
+}
+.portfolio .title::after{
+    content: "My Gallery";
+    background: #323647;
+}
+.portfolio .gallery .figure{
+    background: #414556;
+    border-radius: 6px;
+    padding: 25px 35px;
+}
+.portfolio .gallery .figure:hover{
+    background: orange;
+}
+.portfolio .gallery .figure:hover .box{
+    transform: scale(1.10);
+}
+.portfolio .gallery .figure .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio .gallery .figure img{
+    height: 250px;
+    width: 260px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 5px solid white;
+}
+.portfolio .gallery .figure:hover img{
+    background-color: black;
+}
+
+/*for mobile phone*/
+@media (max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .links-btn{
+        display: block;
+        z-index: 999;
+    }
+    .links-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .links{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #5f6787;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .links.active{
+        left: 0;
+    }
+    .navbar .links li{
+        display: block;
+    }
+    .navbar .links li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+}  
