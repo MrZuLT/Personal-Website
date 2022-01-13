@@ -193,7 +193,7 @@ section .title::after{
     background: orange;
 }
 .portfolio .gallery .figure:hover .box{
-    transform: scale(1.15);
+    transform: scale(1.13);
 }
 .portfolio .gallery .figure .box{
     display: flex;
@@ -218,17 +218,138 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    /*background-color: orange;*/
     border: 2px solid white!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
     width: 35px;
     border-radius: 14px;
+    background-color: orange!important;
 }
 .owl-dot .active,
 .owl-dot:hover{
     background: orange!important;
+}
+
+/*Contact section style*/
+.contact{
+    font-family: 'Poppins' , sans-serif; 
+    background: #4b516a;
+}
+.contact .title::after{
+    content: "Get in Touch";
+    background: #4b516a;
+}
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+    color: white;
+}
+.contact .contact-content .left .icons{
+    margin:  10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 20px;
+    color: orange;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+    color: white;
+}   
+.contact .contact-content .info .sub-title{
+    color: rgb(233, 195, 125);
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .number{
+    margin-left: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins' , sans-serif;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+} 
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+.contact .right form .button button{
+    height: 100%;
+    width: 100%;
+    border: 2px solid orange;
+    background: orange;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.contact .right form .button button:hover{
+    color: orange;
+    background: none;
+}
+
+/*footer  section style*/
+footer{
+    font-family: 'Poppins' , sans-serif; 
+    background: #282a39;
+    padding: 20px 23px;
+    color: white;
+    text-align: center;
+}
+footer span a{
+    color: orange;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
 }
 
 
@@ -280,7 +401,7 @@ section .title::after{
         font-size: 25px;
     }
     .home .home-content .text-2{
-        font-size: 70px;
+        font-size: 60px;
     }
     .home .home-content .text-3{
         font-size: 35px;
@@ -299,6 +420,10 @@ section .title::after{
     .about .about-content .right{
         flex: 100%;
     }
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
 
 @media (max-width: 500px){
@@ -306,9 +431,13 @@ section .title::after{
         padding: 0 23px;
     }
     .home .home-content .text-2{
-        font-size: 50px;
+        font-size: 45px;
     }
     .home .home-content .text-3{
         font-size: 27px;
     }
+    .about .about-content .right .text{
+        font-size: 24px;
+        text-align: center;
+    }    
 }  
