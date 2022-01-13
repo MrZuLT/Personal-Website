@@ -157,6 +157,7 @@ section .title::after{
     height: 400px;
     width: 400px;
     object-fit: cover;
+    border: 2px solid white;
     border-radius: 6px;
 }
 .about .about-content .right{
@@ -172,8 +173,10 @@ section .title::after{
     color: orange;
 }
 .about .about-content .right p{
+    word-spacing: -1px;
     text-align: justify;
     color: white;
+    margin-top: 12px;
 }
 
 /*Portfolio section style*/
@@ -439,5 +442,8 @@ footer span a:hover{
     .about .about-content .right .text{
         font-size: 24px;
         text-align: center;
-    }    
+    }
+    footer{
+        font-size: 11px;
+    }
 }  
