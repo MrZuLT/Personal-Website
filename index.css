@@ -6,6 +6,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -14,7 +17,6 @@
 
 /*Navigation bar style*/
 .navbar{
-    /*background: crimson;*/
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -53,9 +55,11 @@
     margin-left: 45px;
     transition: color 0.3s ease;
 }
+.navbar .links li a.active,
 .navbar .links li a:hover{
     color: orange;
 }
+.navbar.sticky .links li a.active,
 .navbar.sticky .links li a:hover{
     color: white;
 }
@@ -66,6 +70,30 @@
     font-size: 23px;
     cursor: pointer;
     display: none;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: orange;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /*Homepage section style*/
@@ -182,6 +210,7 @@ section .title::after{
 /*Portfolio section style*/
 .portfolio{
     background: #323647;
+    font-family: 'Poppins' , sans-serif;
 }
 .portfolio .title::after{
     content: "My Gallery";
@@ -204,12 +233,21 @@ section .title::after{
     align-items: center;
     justify-content: center;
 }
+.portfolio .gallery .figure .text{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin: 10px 0 7px 0;
+}
 .portfolio .gallery .figure img{
     height: 200px;
     width: 260px;
     object-fit: cover;
     border-radius: 10%;
-    border: 5px solid white;
+    border: 5px solid orange;
+}
+.portfolio .gallery .figure:hover img{
+    border-color: white;
 }
 .owl-dots{
     text-align: center;
@@ -330,7 +368,7 @@ section .title::after{
     background: orange;
     color: white;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 6px;
     cursor: pointer;
 }
