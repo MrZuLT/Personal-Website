@@ -99,7 +99,7 @@ html{
 /*Homepage section style*/
 .home{
     display: flex;
-    background: url("Theme.jpg") no-repeat center #323647;
+    background: #323647;
     height: 100vh;
     color: white;
     min-height: 500px;
@@ -127,6 +127,27 @@ html{
 .home .home-content .text-3 span{
     color: orange;
     font-weight: 500;
+}
+.home .images{
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.home .images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.home .images:hover .shape{
+    bottom: 40px;
+}
+.home .images:hover .me{
+    left: 45%;
 }
 
 /*All section title*/
@@ -290,15 +311,22 @@ section .title::after{
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
-.contact .contact-content .text{
+.contact .contact-content .text1{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.contact .contact-content .text2{
     color: white;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.contact .contact-content .left p{
-    text-align: justify;
-    color: white;
+.contact .contact-content .left{
+    background: #414556;
+    padding: 20px;
 }
 .contact .contact-content .left .icons{
     margin:  10px 0;
