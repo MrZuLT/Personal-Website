@@ -133,7 +133,7 @@ html{
     height: 80%;
     position: absolute;
     bottom: 0;
-    right: 100px;
+    right: 0px;
 }
 .home .images img{
     height: 100%;
@@ -498,6 +498,19 @@ footer span a:hover{
 @media (max-width: 500px){
     .max-width{
         padding: 0 23px;
+    }
+    .home .images{
+        width: 50%;
+        height: 52%;
+        bottom: 0;
+        right: 80px;
+        /*display: none;*/
+    }
+    .home .images:hover .shape{
+        bottom: 20px;
+    }
+    .home .home-content{
+        height: 300px;
     }
     .home .home-content .text-2{
         font-size: 45px;
