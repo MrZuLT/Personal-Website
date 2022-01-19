@@ -262,7 +262,7 @@ section .title::after{
 }
 .portfolio .gallery .figure img{
     height: 200px;
-    width: 260px;
+    width: 250px;
     object-fit: cover;
     border-radius: 10%;
     border: 5px solid orange;
@@ -470,10 +470,10 @@ footer span a:hover{
         font-size: 25px;
     }
     .home .home-content .text-2{
-        font-size: 60px;
+        font-size: 55px;
     }
     .home .home-content .text-3{
-        font-size: 35px;
+        font-size: 30px;
     }
     .max-width{
         max-width: 800px;
