@@ -55,11 +55,9 @@ html{
     margin-left: 45px;
     transition: color 0.3s ease;
 }
-.navbar .links li a.active,
 .navbar .links li a:hover{
     color: orange;
 }
-.navbar.sticky .links li a.active,
 .navbar.sticky .links li a:hover{
     color: white;
 }
