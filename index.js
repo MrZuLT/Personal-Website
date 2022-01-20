@@ -47,3 +47,22 @@ $(document).ready(function () {
   });
 
 });
+
+//get all required
+/*const form = document.querySelector("form"),
+statusTxt = form.querySelector(".button");
+
+form.onsubmit = ()=>{
+  e.preventDefault(); //preventing form from submitting
+  statusTxt.getElementsByClassName.display = "block";
+  
+  let xhr = new XMLHttpRequest(); //creating new xml object
+  xhr.open("POST", "contact.php", true); //sending post request to cantact.php file
+  xhr.onload = ()=>{ //once ajax loaded
+    if(xhr.readyState == 4 && xhr.status ==200){
+      let response = xhr.response; //
+      console.log(response);
+    }
+  }
+  xhr.send();
+}*/
