@@ -9,6 +9,8 @@ body{
     overflow: hidden;
     align-items: center;
 }
+
+/*Logo to link home page*/
 .logo_1{
     text-align: center;
     width: 100%;
@@ -27,6 +29,8 @@ body{
 .logo_1 a span{
     color: orange;
 }
+
+/*Login page*/
 .center{
     position: absolute;
     top: 50%;
