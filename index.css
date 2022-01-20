@@ -220,7 +220,6 @@ section .title::after{
     color: orange;
 }
 .about .about-content .right p{
-    word-spacing: -1px;
     text-align: justify;
     color: white;
     margin-top: 12px;
@@ -467,6 +466,19 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
+    .home .images{
+        width: 50%;
+        height: 50%;
+        bottom: 0;
+        right: 50px;
+        /*display: none;*/
+    }
+    .home .images:hover .shape{
+        bottom: 20px;
+    }
+    .home .home-content{
+        height: 300px;
+    }
     .home .home-content .text-2{
         font-size: 55px;
     }
@@ -524,3 +536,5 @@ footer span a:hover{
         font-size: 11px;
     }
 }  
+
+

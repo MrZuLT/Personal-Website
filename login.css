@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins' , sans-serif; 
-    background: #4b516a;
+    background: #323647;
     height: 100vh;
     overflow: hidden;
     align-items: center;
@@ -33,7 +33,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background: #686d8180;
+    background: white;
     border-radius: 10px;
 }
 .center h1{
@@ -50,9 +50,9 @@ body{
 .center .title_1{
     position: relative;
     text-align: center;
-    color: white;
+    color: black;
     font-family: 'Ubuntu' , sans-serif;
-    border-bottom: 2px solid white;
+    /*border-bottom: 2px solid silver;*/
 }
 .center form{
     padding: 0 40px;
@@ -61,7 +61,7 @@ body{
 }
 form .txt_field{
     position: relative;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(143, 137, 137);
     margin: 40px 0;
 }
 .txt_field input{
@@ -77,7 +77,7 @@ form .txt_field{
     position: absolute;
     top: 50%;
     left: 5px;
-    color: white; 
+    color: rgb(143, 137, 137); 
     transform: translateY(-50%);
     font-size: 16px;
     pointer-events: none;
@@ -96,7 +96,7 @@ form .txt_field{
 .txt_field input:focus ~ label,
 .txt_field input:valid ~ label{
     top: -5px;
-    color: orange;
+    color: black;
 }
 .txt_field input:focus ~ span::before,
 .txt_field input:valid ~ span::before{
@@ -115,7 +115,7 @@ input[type="submit"]{
     outline: none;
 }
 input[type="submit"]:hover{
-    border-color: white;
+    border-color: black;
     transition: .5s;
 }
 
