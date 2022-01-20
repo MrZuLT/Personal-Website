@@ -119,3 +119,9 @@ input[type="submit"]:hover{
     transition: .5s;
 }
 
+@media (max-width: 450px){
+    .center{
+      width: 350px;
+    }
+}
+
