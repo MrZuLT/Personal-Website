@@ -1,5 +1,5 @@
 <?php
-//let get all form values
+//Declare and initialize the variables
 $userName = $_POST['name'];
 $userPhone = $_POST['phone'];
 $userEmail = $_POST['email'];
