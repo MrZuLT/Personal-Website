@@ -359,7 +359,7 @@ footer span a:hover{
         height: 50%;
         bottom: 0;
         right: 50px;
-        /*display: none;*/
+        display: none;
     }
     .home .images:hover .shape{
         bottom: 20px;
@@ -402,7 +402,7 @@ footer span a:hover{
         height: 52%;
         bottom: 0;
         right: 80px;
-        /*display: none;*/
+        display: none;
     }
     .home .images:hover .shape{
         bottom: 20px;
