@@ -9,11 +9,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
 
-    <div class="logo_1"><a href="index.html"><span>Mr</span>ZuLT</a></div>
+    <!--Navigation-->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="index.html"><span>Mr</span>ZuLT</a></div>
+
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+            </ul>
+            <div class="links-btn">
+                <i class='fa fa-bars'></i>
+            </div>
+
+        </div>
+    </nav>
 
     <div class="center">
         <div class="title_1">
@@ -34,6 +53,8 @@
             <input type="submit" value="Login">
         </form>
     </div>
+
+    <script src="login.js"></script>
 
 </body>
 

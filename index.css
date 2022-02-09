@@ -42,7 +42,7 @@ html{
     color: orange;
 }
 .navbar.sticky .logo a span{
-    color: white;
+    color: black;
 }
 .navbar .links li{
     list-style: none;
@@ -185,11 +185,11 @@ section .title::after{
 /*About section style*/
 .about{
     font-family: 'Poppins' , sans-serif;
-    background: #4b516a;
+    background: #3f4355;
 }
 .about .title::after{
     content: "Introduction";
-    background: #4b516a;
+    background: #3f4355;
 }
 .about .about-content{
     display: flex;
@@ -227,12 +227,12 @@ section .title::after{
 
 /*Portfolio section style*/
 .portfolio{
-    background: #323647;
+    background: #4e5264;
     font-family: 'Poppins' , sans-serif;
 }
 .portfolio .title::after{
     content: "My Gallery";
-    background: #323647;
+    background: #4e5264;
 }
 .portfolio .gallery .figure{
     background: #414556;
@@ -288,6 +288,118 @@ section .title::after{
 .owl-dot .active,
 .owl-dot:hover{
     background: orange!important;
+}
+
+/*Contact section style*/
+.contact{
+    font-family: 'Poppins' , sans-serif; 
+    background: #323647;
+}
+.contact .title::after{
+    content: "Get in Touch";
+    background: #323647;
+}
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text1{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.contact .contact-content .text2{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left{
+    background: #4b516a;
+    padding: 20px;
+}
+.contact .contact-content .left .icons{
+    margin:  10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 20px;
+    color: orange;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+    color: white;
+}   
+.contact .contact-content .info .sub-title{
+    color: rgb(233, 195, 125);
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .number{
+    margin-left: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins' , sans-serif;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+} 
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+.contact .right form .button button{
+    height: 100%;
+    width: 100%;
+    border: 2px solid orange;
+    background: orange;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.contact .right form .button button:hover{
+    color: orange;
+    background: none;
 }
 
 /*footer  section style*/
@@ -365,13 +477,13 @@ footer span a:hover{
         bottom: 20px;
     }
     .home .home-content{
-        height: 300px;
+        height: 200px;
     }
     .home .home-content .text-2{
-        font-size: 55px;
+        font-size: 60px;
     }
     .home .home-content .text-3{
-        font-size: 30px;
+        font-size: 40px;
     }
     .max-width{
         max-width: 800px;
@@ -408,7 +520,7 @@ footer span a:hover{
         bottom: 20px;
     }
     .home .home-content{
-        height: 300px;
+        height: 200px;
     }
     .home .home-content .text-2{
         font-size: 45px;

@@ -25,14 +25,14 @@
     <!--Navigation-->
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#"><span>Mr</span>ZuLT</a></div>
+            <div class="logo"><a href="index.html"><span>Mr</span>ZuLT</a></div>
 
             <ul class="links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html" class="active">Login</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html" alt="Admin" class="active">Login</a></li>
             </ul>
             <div class="links-btn">
                 <i class='fa fa-bars'></i>
@@ -70,7 +70,6 @@
                     <p>I'm study Information Technology, 2nd years of Bachelor's degree at Fatoni University. I'm
                         Interesting in web development.</p>
                     <p>My experience is C language and basic cyber security.</p>
-                    <p>My graduate high school at Pattanasart Wittaya school, Narathiwat.</p>
                     <p>This is my first personal website by using HTML, CSS, and JAVAscript.</p>
                 </div>
             </div>
@@ -105,6 +104,68 @@
                         <img src="work4.jpg" alt="">
                         <div class="text">Qiyamullain Activity</div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact page-->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text1">Get in Touch</div>
+
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fa fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Zulkiflee Tuelayeana</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-map-marker"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Narathiwat, Thailand</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">zulkiflee1250@ftu.ac.th</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column right">
+                    <div class="text2">Message Me</div>
+                    <form action="contact.php" method="post">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="name" placeholder="Name">
+                            </div>
+                            <div class="field number">
+                                <input type="text" name="phone" placeholder="Phone Number">
+                            </div>
+                        </div>
+                        <div class="field email">
+                            <input type="text" name="email" placeholder="Email">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" name="message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
